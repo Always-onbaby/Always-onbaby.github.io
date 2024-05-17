@@ -1,18 +1,14 @@
-import { defaultTheme } from "@vuepress/theme-default";
+// import { defaultTheme } from "@vuepress/theme-default";
 import { defineUserConfig } from "vuepress/cli";
 import { viteBundler } from "@vuepress/bundler-vite";
+import theme from "./theme";
 
 export default defineUserConfig({
-  lang: "en-US",
+  lang: "zh-CN",
 
   title: "VuePress",
   description: "My first VuePress Site",
-
-  theme: defaultTheme({
-    logo: "https://vuejs.press/images/hero.png",
-
-    navbar: ["/", "/get-started","/end","/start"],
-  }),
+  theme,
 
   bundler: viteBundler(),
 });

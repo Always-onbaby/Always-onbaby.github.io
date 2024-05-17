@@ -5,7 +5,8 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "docs:build": "vuepress build docs",
+    "build": "vuepress build docs",
+    "dev": "vuepress dev docs --clean-cache",
     "docs:clean-dev": "vuepress dev docs --clean-cache",
     "docs:dev": "vuepress dev docs",
     "docs:update-package": "pnpm dlx vp-update"
@@ -14,6 +15,7 @@
     "@vuepress/bundler-vite": "2.0.0-rc.11",
     "@vuepress/theme-default": "2.0.0-rc.30",
     "vue": "^3.4.27",
-    "vuepress": "2.0.0-rc.11"
+    "vuepress": "2.0.0-rc.11",
+    "vuepress-theme-hope": "2.0.0-rc.43"
   }
 }
