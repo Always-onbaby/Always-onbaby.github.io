@@ -1,6 +1,6 @@
 {
   "name": "demo-docs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "文档描述~~",
   "license": "MIT",
   "type": "module",
@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.11",
+    "@vuepress/plugin-register-components": "2.0.0-rc.30",
     "@vuepress/theme-default": "2.0.0-rc.30",
     "vue": "^3.4.27",
     "vuepress": "2.0.0-rc.11",

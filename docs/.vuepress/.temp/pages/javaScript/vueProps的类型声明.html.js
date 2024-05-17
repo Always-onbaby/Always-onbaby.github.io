@@ -1,0 +1,3 @@
+import comp from "D:/私有项目管理/博客文档/vuepress-starter/docs/.vuepress/.temp/pages/javaScript/vueProps的类型声明.html.vue"
+const data = JSON.parse("{\"path\":\"/javaScript/vueProps%E7%9A%84%E7%B1%BB%E5%9E%8B%E5%A3%B0%E6%98%8E.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[{\"level\":3,\"title\":\"运动时声明\",\"slug\":\"运动时声明\",\"link\":\"#运动时声明\",\"children\":[]},{\"level\":3,\"title\":\"基于类型声明\",\"slug\":\"基于类型声明\",\"link\":\"#基于类型声明\",\"children\":[]},{\"level\":3,\"title\":\"Props 解构默认值\",\"slug\":\"props-解构默认值\",\"link\":\"#props-解构默认值\",\"children\":[]}],\"git\":{\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"javaScript/vueProps的类型声明.md\"}")
+export { comp, data }

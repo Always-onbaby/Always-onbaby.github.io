@@ -5,6 +5,7 @@ import clientConfig3 from 'D:/私有项目管理/博客文档/vuepress-starter/n
 import clientConfig4 from 'D:/私有项目管理/博客文档/vuepress-starter/node_modules/.pnpm/@vuepress+plugin-nprogress@2.0.0-rc.30_vuepress@2.0.0-rc.11/node_modules/@vuepress/plugin-nprogress/lib/client/config.js'
 import clientConfig5 from 'D:/私有项目管理/博客文档/vuepress-starter/node_modules/.pnpm/@vuepress+plugin-theme-data@2.0.0-rc.30_vuepress@2.0.0-rc.11/node_modules/@vuepress/plugin-theme-data/lib/client/config.js'
 import clientConfig6 from 'D:/私有项目管理/博客文档/vuepress-starter/node_modules/.pnpm/@vuepress+theme-default@2.0.0-rc.30_vuepress@2.0.0-rc.11/node_modules/@vuepress/theme-default/lib/client/config.js'
+import clientConfig7 from 'D:/私有项目管理/博客文档/vuepress-starter/docs/.vuepress/.temp/register-components/clientConfig.7970e2fd.js'
 
 export const clientConfigs = [
   clientConfig0,
@@ -14,4 +15,5 @@ export const clientConfigs = [
   clientConfig4,
   clientConfig5,
   clientConfig6,
+  clientConfig7,
 ]

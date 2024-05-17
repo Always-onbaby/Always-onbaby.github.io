@@ -1,0 +1,3 @@
+import comp from "D:/私有项目管理/博客文档/vuepress-starter/docs/.vuepress/.temp/pages/javaScript/Vue3的watch，watchEffect解释.html.vue"
+const data = JSON.parse("{\"path\":\"/javaScript/Vue3%E7%9A%84watch%EF%BC%8CwatchEffect%E8%A7%A3%E9%87%8A.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[{\"level\":3,\"title\":\"watch 的使用\",\"slug\":\"watch-的使用\",\"link\":\"#watch-的使用\",\"children\":[]},{\"level\":3,\"title\":\"watchEffect()\",\"slug\":\"watcheffect\",\"link\":\"#watcheffect\",\"children\":[]}],\"git\":{\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"javaScript/Vue3的watch，watchEffect解释.md\"}")
+export { comp, data }
