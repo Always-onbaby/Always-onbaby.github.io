@@ -1,6 +1,20 @@
-## JS 导出模块和导入模块
+### JS 模块的导入
 
 #### 在 JavaScript 中，`import aa` 和 `import { aa }` 是两种不同的导入语法形式，它们有一些区别。
+
+```javascript
+import defaultExport from "module-name";
+import * as name from "module-name";
+import { export1 } from "module-name";
+import { export1 as alias1 } from "module-name";
+import { default as alias } from "module-name";
+import { export1, export2 } from "module-name";
+import { export1, export2 as alias2 /* … */ } from "module-name";
+import { "string name" as alias } from "module-name";
+import defaultExport, { export1 /* … */ } from "module-name";
+import defaultExport, * as name from "module-name";
+import "module-name";
+```
 
 1.  `import aa`：这是默认导入的语法形式，用于导入一个模块的默认导出。例如：
     ```javascript
@@ -23,7 +37,15 @@
 
     这样既导入了 `module` 模块的默认导出，也导入了其中被命名为 `bb` 的导出内容。
 
+4.  仅作为一个副作用导入一个模块
+    ```javascript
+    import "./modules/my-modules.ts";
+    ```
+    整个模块仅作为副作用导入，而不导入模块中的具体内容。直接运行模块中的全部代码
+
 总结起来，`import aa` 是默认导入语法形式，导入模块的默认导出；而 `import { aa }` 是命名导入语法形式，导入模块中指定的变量或函数。
+
+### JS 模块的导出
 
 #### 在 JavaScript 中，导出模块有两种常见的语法形式：默认导出和命名导出，它们之间有一些区别。
 

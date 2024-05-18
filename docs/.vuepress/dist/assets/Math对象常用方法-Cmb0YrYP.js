@@ -1,0 +1,1 @@
+const a="### Math 对象的常用方法\n\nMath 对象是 Javascript 中的一个内置对象，提供一些常用的数学函数和常量\n\n1. `Math.abs()` 返回一个数的绝对值\n2. `Math.cell()` 将一个数向上取整，返回大于或等于给定数字的最小整数\n3. `Math.floor()` 将一个数向下取整，返回小于或等于给定数字的最大整数\n4. `Math.max()` 返回数字数组中的最大值\n5. `Math.min()` 返回数字数组中的最小值\n6. `Math.round()` 返回给定数字四舍五入后的整数\n7. `Math.random()` 返回 0 到 1 之间的随机数\n8. `Math.PI` 圆周率常亮\n";export{a as default};

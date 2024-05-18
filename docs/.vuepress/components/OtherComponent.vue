@@ -11,35 +11,26 @@
 
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
+import { getList } from '../writeList'
 const navList = ref<any>([])
 onMounted(() => {
-  getList()
+  navList.value = getList()
 
 })
-
-
-const getList = async () => {
-  const _list: any = []
-  // const globModules = import.meta.glob("../../javaScript/**/*.md");
-  // for (const [key, value] of Object.entries(globModules)) {
-  //   const name = key.slice(key.indexOf("/javaScript"), key.lastIndexOf("."));
-  //   const _name = key.slice(key.lastIndexOf("/") + 1, key.lastIndexOf("."));
-  //   _list.push({
-  //     label: _name,
-  //     link: `${name}.html`,
-  //     time: new Date().getTime()
-  //   })
-  // }
-  navList.value = _list
-}
 
 </script>
 <style lang="scss" scoped>
 .content-link {
   // padding: 0 10px;
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
   align-items: center;
+  width: calc(33.3333% - 26.6667px);
+  // margin-bottom: 0px;
+  margin-top: unset;
+  background: transparent;
+  margin: 10px;
+  border: 1px dashed #eaecef;
 
   .title {
     flex: 1;
@@ -58,9 +49,6 @@ const getList = async () => {
     color: #6a8bad;
   }
 
-  &:not(:last-child) {
-    border-bottom: 1px dashed #eaecef;
-  }
 
 }
 </style>

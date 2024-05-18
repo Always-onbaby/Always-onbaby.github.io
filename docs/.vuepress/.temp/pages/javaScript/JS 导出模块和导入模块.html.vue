@@ -1,6 +1,17 @@
-<template><div><h2 id="js-导出模块和导入模块" tabindex="-1"><a class="header-anchor" href="#js-导出模块和导入模块"><span>JS 导出模块和导入模块</span></a></h2>
+<template><div><h3 id="js-模块的导入" tabindex="-1"><a class="header-anchor" href="#js-模块的导入"><span>JS 模块的导入</span></a></h3>
 <h4 id="在-javascript-中-import-aa-和-import-aa-是两种不同的导入语法形式-它们有一些区别。" tabindex="-1"><a class="header-anchor" href="#在-javascript-中-import-aa-和-import-aa-是两种不同的导入语法形式-它们有一些区别。"><span>在 JavaScript 中，<code v-pre>import aa</code> 和 <code v-pre>import { aa }</code> 是两种不同的导入语法形式，它们有一些区别。</span></a></h4>
-<ol>
+<div class="language-javascript line-numbers-mode" data-ext="js" data-title="js"><pre v-pre class="language-javascript"><code><span class="token keyword">import</span> defaultExport <span class="token keyword">from</span> <span class="token string">"module-name"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> name <span class="token keyword">from</span> <span class="token string">"module-name"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> export1 <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"module-name"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> export1 <span class="token keyword">as</span> alias1 <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"module-name"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> <span class="token keyword">default</span> <span class="token keyword">as</span> alias <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"module-name"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> export1<span class="token punctuation">,</span> export2 <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"module-name"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> export1<span class="token punctuation">,</span> export2 <span class="token keyword">as</span> alias2 <span class="token comment">/* … */</span> <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"module-name"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> <span class="token string">"string name"</span> <span class="token keyword">as</span> alias <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"module-name"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> defaultExport<span class="token punctuation">,</span> <span class="token punctuation">{</span> export1 <span class="token comment">/* … */</span> <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"module-name"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> defaultExport<span class="token punctuation">,</span> <span class="token operator">*</span> <span class="token keyword">as</span> name <span class="token keyword">from</span> <span class="token string">"module-name"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token string">"module-name"</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ol>
 <li>
 <p><code v-pre>import aa</code>：这是默认导入的语法形式，用于导入一个模块的默认导出。例如：</p>
 <div class="language-javascript line-numbers-mode" data-ext="js" data-title="js"><pre v-pre class="language-javascript"><code><span class="token keyword">import</span> aa <span class="token keyword">from</span> <span class="token string">"module"</span><span class="token punctuation">;</span>
@@ -16,8 +27,14 @@
 <div class="language-javascript line-numbers-mode" data-ext="js" data-title="js"><pre v-pre class="language-javascript"><code><span class="token keyword">import</span> aa<span class="token punctuation">,</span> <span class="token punctuation">{</span> bb <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"module"</span><span class="token punctuation">;</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>这样既导入了 <code v-pre>module</code> 模块的默认导出，也导入了其中被命名为 <code v-pre>bb</code> 的导出内容。</p>
 </li>
+<li>
+<p>仅作为一个副作用导入一个模块</p>
+<div class="language-javascript line-numbers-mode" data-ext="js" data-title="js"><pre v-pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token string">"./modules/my-modules.ts"</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>整个模块仅作为副作用导入，而不导入模块中的具体内容。直接运行模块中的全部代码</p>
+</li>
 </ol>
 <p>总结起来，<code v-pre>import aa</code> 是默认导入语法形式，导入模块的默认导出；而 <code v-pre>import { aa }</code> 是命名导入语法形式，导入模块中指定的变量或函数。</p>
+<h3 id="js-模块的导出" tabindex="-1"><a class="header-anchor" href="#js-模块的导出"><span>JS 模块的导出</span></a></h3>
 <h4 id="在-javascript-中-导出模块有两种常见的语法形式-默认导出和命名导出-它们之间有一些区别。" tabindex="-1"><a class="header-anchor" href="#在-javascript-中-导出模块有两种常见的语法形式-默认导出和命名导出-它们之间有一些区别。"><span>在 JavaScript 中，导出模块有两种常见的语法形式：默认导出和命名导出，它们之间有一些区别。</span></a></h4>
 <ol>
 <li>
