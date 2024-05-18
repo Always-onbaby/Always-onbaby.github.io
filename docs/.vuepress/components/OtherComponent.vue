@@ -13,16 +13,14 @@
 import { onMounted, ref } from 'vue';
 const navList = ref<any>([])
 onMounted(() => {
-  // getList()
+  getList()
 
 })
 
 
 const getList = async () => {
   const _list: any = []
-  // @ts-ignore
   // const globModules = import.meta.glob("../../javaScript/**/*.md");
-
   // for (const [key, value] of Object.entries(globModules)) {
   //   const name = key.slice(key.indexOf("/javaScript"), key.lastIndexOf("."));
   //   const _name = key.slice(key.lastIndexOf("/") + 1, key.lastIndexOf("."));
