@@ -14,6 +14,10 @@
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="粗体、斜体" tabindex="-1"><a class="header-anchor" href="#粗体、斜体"><span>粗体、斜体</span></a></h4>
 <div class="language-javascript line-numbers-mode" data-ext="js" data-title="js"><pre v-pre class="language-javascript"><code><span class="token operator">**</span><span class="token operator">*</span>粗体完本<span class="token operator">**</span><span class="token operator">*</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h4 id="链接" tabindex="-1"><a class="header-anchor" href="#链接"><span>链接</span></a></h4>
-</div></template>
+<p>JS 模块的导入导出。</p>
+<div class="language-javascript line-numbers-mode" data-ext="js" data-title="js"><pre v-pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> formateDate <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"utils"</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 基本的增删改查，没有组件库和工具库</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
 
 

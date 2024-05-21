@@ -30,3 +30,11 @@ ${document}.ready(function() {
 ```
 
 #### 链接
+
+JS 模块的导入导出。
+
+```javascript
+import { formateDate } from "utils";
+
+// 基本的增删改查，没有组件库和工具库
+```
