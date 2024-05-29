@@ -8,7 +8,7 @@ export const getList = () => {
   const _list: any = [];
   // @ts-ignore
   const globModules = import.meta.glob("../javaScript/**/*.md", {
-    // raw 以字符串的资源加载 ， url 显示加载资源为一个url。不指定在build的时候会报错
+    //指定资源的加载方式，不指定在build的时候会报错 raw 以字符串的资源加载 ， url 显示加载资源为一个url。
     query: "raw",
   });
 
