@@ -44,3 +44,20 @@ You can [add extra style][style] with `.vuepress/styles/index.scss` file.
 [sidebar]: https://vuejs.press/reference/default-theme/config.html#sidebar
 [default-theme]: https://vuejs.press/reference/default-theme/
 [style]: https://vuejs.press/reference/default-theme/styles.html#style-file
+
+<!-- 动态组件，有些场景会用到多个组件来回切换的场景，比如Tab界面 -->
+
+<!-- 确保在实际开发中，我么可以使用到这些技巧和总结的方式方法。比如Tab界面，无望东西 -->
+
+```vue
+<component :is="tabs[currentTab]">
+```
+
+在上面的示例中，被传给`:is`的值可以是以下几种情况
+
+- 被注册的组件名
+- 导入的组件对象
+
+当使用`<component :is="">`在多个组件间作切换时。被切换掉的组件会被卸载。可以使用<KeepAlive>组件阿里强制被切换掉的组件仍然保持存货状态。
+
+<script type="text/x-template"></script>

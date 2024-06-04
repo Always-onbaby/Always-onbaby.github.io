@@ -88,6 +88,35 @@ proxy: 配置代理，用于解决跨域问题。</p>
 </li>
 </ul>
 <div class="language-javascript line-numbers-mode" data-ext="js" data-title="js"><pre v-pre class="language-javascript"><code><span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token function">vue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">css</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">typescript</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></div></template>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><!-- vite的插件管理，vite的特性和开发依赖以及成产依赖 vue vue-router pinia plugins(插件) Vite支持通过插件来拓展其功能， css预处理 less sass styles TypeScript等-->
+<!-- 订单的金额，下单的数量和金额 如果你是早晨跑个5km然后回家洗个热水澡，按摩一下，吃个营养的早餐，丰盛的午餐，中午睡会觉，下午看看知乎，收下房租啥的，那么你会很健康，如果你是每天的996，那你是怕自己噶的不够快。 -->
+<!-- 推动javascript的发展历程 JS 大前端进阶知识点整合 -->
+<!-- 前端设计模式
+观察者模式 定义一种一对多的依赖关系，让多个观察者对象同时监听某一个主题对象，当对象状态发生变化时，会通知观察者，使它们能够自动更新。常用于实现数据的绑定以及事件的发布订阅
+
+单例模式 保证一个类仅有一个实例，并提供一个全局的访问点 常用于全局的状态管理、创建唯一的弹窗、缓存管理等场景
+
+工厂模式 定义一个创建对象的接口，让子类决定实例化哪一个类，使一个类的方法延伸到子类
+
+策略模式 定义一系列算法，把它们一个个封装起来，并且使它们可以相互替换。策略模式使得算法可以独立于使用它的客户而变化。
+
+代理模式 为其他对象提供一种代理以控制对这个对象的访问 虚拟代理、防抖节流代理等。
+
+装饰器模式 动态的给对象添加额外的职责。就拓展功能而言，装饰模式比生成子类更灵活。-->
+<!--
+  1,性能优化 网络性能优化（CDN 资源压缩 懒加载） 前端代码性能优化（减少重绘重排 代码拆分 懒加载） 移动端性能优化（渲染性能 内存管理）
+  2，设计模式 前段常见的设计模式（观察者模式 单例模式 工厂模式） 可复用性和可维护性的设计思路
+  3，模块化开发 CommonJS 和Es6模块化 模块加载器和打包工具（webpack Rollup） 动态导入和按需加载
+  4，前端框架深入 Vue.js React.js Angular等主流框架的高级特性和原理 自定义指令 渲染函数  虚拟DOM等方面的深入理解
+  5，跨平台开发 React Native Flutter等跨平台技术 小程序开发
+  6，Web安全 常见的Web安全问题和解决方案（XSS CSRF CSP） HTTPS的原理和部署
+  7，现代浏览器特性 PWA（progressive Web App）的实现和优化 Web Components的使用和原理
+  8，数据可视化 Canvas Svg等图形绘制技术 D3.js Echarts等数据可视化库的使用和定制
+  9，GraphQl GraphQl在前端开发中的应用
+  10，TypeScript的高级特性和类型系统的使用
+  11，服务端渲染 同构建应用（服务端渲染+客户端渲染）的实践和原理
+  12，持续集成和部署 CI/CD流水线的搭建和自动化测试 -->
+<!-- 可维护性 和可复用性 的设计思路 赵雷 许巍 还有谁 动态导入和按需加载-->
+</div></template>
 
 

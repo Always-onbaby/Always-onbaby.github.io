@@ -18,6 +18,15 @@
 </ul>
 <p>Check <a href="https://vuejs.press/reference/default-theme/" target="_blank" rel="noopener noreferrer">default theme docs</a> for full reference.</p>
 <p>You can <a href="https://vuejs.press/reference/default-theme/styles.html#style-file" target="_blank" rel="noopener noreferrer">add extra style</a> with <code v-pre>.vuepress/styles/index.scss</code> file.</p>
+<!-- 动态组件，有些场景会用到多个组件来回切换的场景，比如Tab界面 -->
+<!-- 确保在实际开发中，我么可以使用到这些技巧和总结的方式方法。比如Tab界面，无望东西 -->
+<div class="language-vue line-numbers-mode" data-ext="vue" data-title="vue"><pre v-pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>component</span> <span class="token attr-name">:is</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tabs[currentTab]<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>在上面的示例中，被传给<code v-pre>:is</code>的值可以是以下几种情况</p>
+<ul>
+<li>被注册的组件名</li>
+<li>导入的组件对象</li>
+</ul>
+<p>当使用<code v-pre>&lt;component :is=&quot;&quot;&gt;</code>在多个组件间作切换时。被切换掉的组件会被卸载。可以使用<KeepAlive>组件阿里强制被切换掉的组件仍然保持存货状态。</p>
 </div></template>
 
-
+<script type="text/x-template"></script>
