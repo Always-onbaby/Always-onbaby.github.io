@@ -49,6 +49,10 @@ You can [add extra style][style] with `.vuepress/styles/index.scss` file.
 
 <!-- 确保在实际开发中，我么可以使用到这些技巧和总结的方式方法。比如Tab界面，无望东西 -->
 
+<!-- 就是玩物 ，有些可以玩一辈子，有些也就玩玩过过新鲜劲 -->
+
+<!-- 给到大前端进阶学习曲线 和知识汇总以及需要掌握的基础八股和资料 下场给主家敬酒 -->
+
 ```vue
 <component :is="tabs[currentTab]">
 ```
@@ -60,4 +64,4 @@ You can [add extra style][style] with `.vuepress/styles/index.scss` file.
 
 当使用`<component :is="">`在多个组件间作切换时。被切换掉的组件会被卸载。可以使用<KeepAlive>组件阿里强制被切换掉的组件仍然保持存货状态。
 
-<script type="text/x-template"></script>
+`<script type="text/x-template"></script>`
